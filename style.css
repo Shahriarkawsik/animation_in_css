@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    animation: h1-anim 4s linear infinite alternate;
+}
+@keyframes h1-anim{
+    0%{
+        background-color: orange;
+    }
+    25%{
+        background-color: rgb(242, 255, 0, 0.754);
+    }
+    50%{
+        background-color: rgb(52, 50, 50);
+    }
+    75%{
+        background-color: rgb(155, 155, 199);
+
+    }
+    100%{
+        background-color: rgb(255, 13, 0);
+    }
+  }
+.parent {
+  width: 60rem;
+  height: 30rem;
+  margin: 5rem auto;
+  border: 5px solid orange;
+  box-shadow: 3px 3px 5px orange;
+  position: relative;
+  /* animation: name duration timing-function delay iteration-count direction    fill-mode; */
+  animation-name: parent-anim;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+}
+@keyframes parent-anim {
+  0% {
+    border: 5px solid orange;
+    box-shadow: 3px 3px 5px orange;
+  }
+  25% {
+    border: 5px solid rgb(242, 255, 0, 0.754);
+    box-shadow: 3px 3px 5px rgb(242, 255, 0, 0.754);
+  }
+  50% {
+    border: 5px solid rgb(52, 50, 50);
+    box-shadow: 3px 3px 5px rgb(52, 50, 50);
+  }
+  75% {
+    border: 5px solid rgb(155, 155, 199);
+    box-shadow: 3px 3px 5px rgb(155, 155, 199);
+  }
+  100% {
+    border: 5px solid rgb(255, 13, 0);
+    box-shadow: 3px 3px 5px rgb(255, 13, 0);
+  }
+}
+.child {
+    width: 8rem;
+    height: 8rem;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    animation: child-anim 4s linear infinite alternate;
+
+  }
+  @keyframes child-anim{
+    0%{
+        top: 0;
+        left: 0;
+        background-color: orange;
+    }
+    25%{
+        background-color: rgb(242, 255, 0, 0.754);
+        top: 10rem;
+        width: 20rem;
+        height: 20rem;
+    }
+    50%{
+        background-color: rgb(52, 50, 50);
+        top: 0;
+        width: 10rem;
+        height: 10rem;
+    }
+    75%{
+        background-color: rgb(155, 155, 199);
+        top: 21.5rem;
+        left: 51rem;
+    }
+    100%{
+        background-color: rgb(255, 13, 0);
+        top: 0;
+        left: 0;
+    }
+  }
